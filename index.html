@@ -19,24 +19,30 @@
   </head>
   <body>
     <div class="container-fulid text-white">
-      <h1 class="text-center mb-5">Welcome to Morstist</h1>
+      <h1 class="text-center mb-5 mt-5">Welcome to Morstist</h1>
       <h2 class="fw-bold mb-3 text-center">
         Enter your message here to convert to morse code.
       </h2>
 
       <div class="mb-3 ms-3 me-5">
-        <label for="formGroupExampleInput" class="form-label"
-          ><h3 class="tex-bold mt-5 text-center">
+        <label for="formGroupExampleInput" class="form-label text-center"
+          ><h3 class="tex-bold mt-5">
             Enter Morse Code here:
           </h3></label
         >
         <input
           type="text"
           class="form-control"
-          id="userText"
+          name="userText"
           placeholder="Enter message"
         />
       </div>
+      <div class="card border-dark ms-3 me-3 mb-3 d-flex justify-content-center" style="max-width: 50rem; height: 40vh;">
+  <div class="card-header text-dark">Morse Equivalent</div>
+  <div class="card-body text-dark">
+    <p class="card-text code">The morse code will be here</p>
+  </div>
+
     </div>
   </body>
 </html>
