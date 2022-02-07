@@ -1,0 +1,30 @@
+<%- include("partials/header"); -%>
+    <div class="container-fulid text-white">
+      <h1 class="text-center mb-5 mt-5">Welcome to Morstist</h1>
+      <h2 class="fw-bold mb-3 text-center">
+        Enter your message here to convert to morse code.
+      </h2>
+
+      <div class="mb-3 ms-3 me-5">
+        <label for="formGroupExampleInput" class="form-label text-center"
+          ><h3 class="tex-bold mt-5">
+            Enter Morse Code here:
+          </h3></label
+        >
+        <input
+          oninput=""
+          type="text"
+          class="form-control fs-2"
+          value="ronen hammond"
+          placeholder="Enter message"
+        />
+      </div>
+      <div class="card border-dark ms-3 me-3 mb-3 d-flex justify-content-center" style="max-width: 50rem; height: 40vh;">
+  <div class="card-header text-dark text-center">Morse Equivalent</div>
+  <div class="card-body text-dark">
+    <p class="card-text code fw-bold fs-3"><%= morseCode %></p>
+  </div>
+
+    </div>
+
+<%- include("partials/footer"); -%>
