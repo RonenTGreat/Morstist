@@ -18,7 +18,6 @@ let encoded = morse.encode("ronen hammond");
 
 app.get("/", function(req, res){
     res.render("home", {morseCode: encoded});
-    console.log(req.body.value);
 });
 
 app.listen(3000, function () {
