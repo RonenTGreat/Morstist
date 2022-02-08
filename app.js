@@ -8,16 +8,19 @@ const app = express();
 
 app.set("view engine", "ejs");
 
-
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-let encoded = morse.encode("ronen hammond");
+var encoded = morse.encode('');
 
+app.get("/", function (req, res) {
+  res.render("home", { morseCode: encoded });
+});
 
-
-app.get("/", function(req, res){
-    res.render("home", {morseCode: encoded});
+app.post("/", function (req, res) {
+  const message = req.body.input;
+  encoded = morse.encode(message)
+  res.redirect("/");
 });
 
 app.listen(3000, function () {
