@@ -8,21 +8,25 @@
   <label for="formGroupExampleInput" class="form-label text-center ms-3"
     ><h3 class="tex-bold mt-5">Enter Morse Code here:</h3></label
   >
-  <div class="input-group mb-3 ms-3">
-    <input
-      style="max-width: 45rem;"
-      type="text"
-      class="form-control"
-      placeholder="Enter message"
-      aria-label="Enter message"
-      aria-describedby="submit button"
-    />
-    <button class="btn btn-secondary" type="submit" id="buttonSubmit">
-      Convert
-    </button>
-  </div>
+  <form action="/" method="post">
+    <div class="input-group mb-3 ms-3">
+      <input
+        style="max-width: 45rem"
+        type="text"
+        class="form-control"
+        autocomplete="off"
+        name="input"
+        placeholder="Enter message"
+        aria-label="Enter message"
+        aria-describedby="submit button"
+      />
+      <button class="btn btn-secondary" type="submit" id="buttonSubmit">
+        Convert
+      </button>
+    </div>
+  </form>
   <div
-    class="card border-dark ms-3 me-3 mb-3 d-flex justify-content-center"
+    class="card border-dark ms-3 me-3 mb-3"
     style="max-width: 50rem; height: 40vh"
   >
     <div class="card-header text-dark text-center">Morse Equivalent</div>
