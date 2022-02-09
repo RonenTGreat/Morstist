@@ -11,6 +11,7 @@
   <form action="/" method="post">
     <div class="input-group mb-3 ms-3">
       <input
+        onchange="this.form.submit()"
         style="max-width: 45rem"
         type="text"
         class="form-control"
@@ -29,11 +30,22 @@
     class="card border-dark ms-3 me-3 mb-3"
     style="max-width: 50rem; height: 40vh"
   >
-    <div class="card-header text-dark text-center">Morse Equivalent</div>
+    <div class="card-header text-dark text-center">
+      Morse Equivalent
+      <button class="copy">
+        <i class="bi bi-clipboard"></i>
+      </button>
+    </div>
     <div class="card-body text-dark">
-      <p class="card-text code fw-bold fs-3"><%= morseCode %></p>
+      <p class="card-text code fw-bold fs-3 result" ><%= morseCode %></p>
     </div>
   </div>
-
-  <%- include("partials/footer"); -%>
 </div>
+
+<script>
+  document.querySelector(".copy").addEventListener("click", async () => {
+    await navigator.clipboard.writeText(document.querySelector(".result").innerHTML);
+  });
+</script>
+
+<%- include("partials/footer"); -%>
