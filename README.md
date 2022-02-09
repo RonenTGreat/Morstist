@@ -36,10 +36,9 @@ $ node app.js
 
 ## Built With
 
-- HTML
+- EJS
 - CSS
 - Bootstrap
-- EJS
 - Node/Express
 
 ## How it looks
