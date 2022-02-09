@@ -1,7 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const morse = require("morse");
-const clipBoard = require("clipboard");
 const { get } = require("express/lib/response");
 
 const app = express();
