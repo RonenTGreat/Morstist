@@ -1,5 +1,5 @@
 <%- include("partials/header"); -%>
-<div class="container-fulid text-white">
+<div class="container-fulid text-white d-flex flex-column justify-content-center align-items-center">
   <h1 class="text-center mb-5 mt-5">Welcome to Morstist</h1>
   <h2 class="fw-bold mb-3 text-center">
     Enter your message here to convert to morse code.
@@ -9,10 +9,10 @@
     ><h3 class="tex-bold mt-5">Enter Morse Code here:</h3></label
   >
   <form action="/" method="post">
-    <div class="input-group mb-3 ms-3">
+    <div class="input-group mb-3">
       <input
         onchange="this.form.submit()"
-        style="max-width: 45rem"
+        style="max-width: 45rem; width: 15rem;"
         type="text"
         class="form-control"
         autocomplete="off"
@@ -27,8 +27,8 @@
     </div>
   </form>
   <div
-    class="card border-dark ms-3 me-3 mb-3"
-    style="max-width: 50rem; height: 40vh"
+    class="card border-dark mb-3"
+    style="max-width: 50rem; height: 40vh; width: 60%;"
   >
     <div class="card-header text-dark text-center">
       Morse Equivalent
