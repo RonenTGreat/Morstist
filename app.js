@@ -4,6 +4,7 @@ const morse = require("morse");
 const { get } = require("express/lib/response");
 
 const app = express();
+const port = process.env.PORT || 5000;
 
 app.set("view engine", "ejs");
 
@@ -22,6 +23,6 @@ app.post("/", function (req, res) {
   res.redirect("/");
 });
 
-app.listen(3000, function () {
+app.listen(port, function () {
   console.log("Server started on port 3000");
 });
